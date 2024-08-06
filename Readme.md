@@ -5,7 +5,7 @@
 2. [모델 입력값에 따른 프롬프트 포맷팅](#모델-입력값에-따른-프롬프트-포맷팅)
 3. [파인튜닝 데이터 생성 형식](#파인튜닝-데이터-생성-형식)
 
-## 1. 기본 모델 사용 예시 
+## 기본 모델 사용 예시 
 (출처: [메타 공식 문서](https://llama.meta.com/docs/model-cards-and-prompt-formats/llama3_1), [메타 허깅 페이스 레포지터리](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct))
 ```python
 import transformers
@@ -33,7 +33,7 @@ print(outputs[0]["generated_text"][-1])
 # 안녕하세요? 저는 메타에서 개발한 llama3.1이에요. ~~
 ```
 
-## 2. 모델 입력값에 따른 프롬프트 포맷팅
+## 모델 입력값에 따른 프롬프트 포맷팅
 
 ### 프롬프트 토큰
 
@@ -63,7 +63,7 @@ Llama 3.1에서 사용되는 프롬프트 Special Token
                     안녕하세요? 메타에서 개발한 llama3.1이에요. ~~ <|eot_id|>
 
     <|end_of_text|>
-## 3. 파인튜닝 데이터 생성 형식
+## 파인튜닝 데이터 생성 형식
 ```python
 
 prompt={}
