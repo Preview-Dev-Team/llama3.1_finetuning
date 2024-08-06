@@ -40,16 +40,18 @@ Llama 3.1에서 사용되는 프롬프트 Special Token
 
 | 토큰 | 설명 |
 |------|------|
-| `<|begin_of_text|>` | 프롬프트의 시작 |
-| `<|end_of_text|>` | 프롬프트의 종료 (모델 토큰 생성 종료) |
-| `<|finetune_right_pad_id|>` | 배치에서 텍스트 시퀀스를 동일한 길이로 패딩 |
-| `<|start_header_id|>` `<|end_header_id|>` | 특정 역할을 지정하는 토큰. 가능한 역할: `[system, user, assistant, ipython]` |
-| `<|eom_id|>` | 메시지 끝. 도구 호출이 필요한 실행 중지 지점 표시 |
-| `<|eot_id|>` | 턴의 끝. 대화 쌍에서 한쪽의 턴이 끝남을 의미 |
-| `<|python_tag|>` | 모델 응답에서 도구(파이썬) 호출을 나타내는 특별한 태그 |
+| <\`begin_of_text\`> | 프롬프트의 시작 |
+| <\`end_of_text\`> | 프롬프트의 종료 (모델 토큰 생성 종료) |
+| <\`finetune_right_pad_id\`> | 배치에서 텍스트 시퀀스를 동일한 길이로 패딩 |
+| <\`start_header_id\`> | 특정 역할을 지정하는 토큰. 가능한 역할: `[system, user, assistant, ipython]` |
+| <\`eom_id\`> | 메시지 끝. 도구 호출이 필요한 실행 중지 지점 표시 |
+| <\`eot_id\`> | 턴의 끝. 대화 쌍에서 한쪽의 턴이 끝남을 의미 |
+| <\`python_tag\`> | 모델 응답에서 도구(파이썬) 호출을 나타내는 특별한 태그 |
 
 위의 예제의 변환 결과
+
 <|begin_of_text|>
+
     <|start_header_id|>system<|end_header_id|>
                 당신은 상냥한 챗봇입니다.<|eot_id|>
     
@@ -59,6 +61,7 @@ Llama 3.1에서 사용되는 프롬프트 Special Token
     <|start_header_id|>assistant<|end_header_id|>
                 안녕하세요? 메타에서 개발한 llama3.1이에요. ~~
 
+<|end_of_text|>
 ## 파인튜닝 데이터 생성 형식
 ```python
 
