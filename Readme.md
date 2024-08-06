@@ -60,7 +60,7 @@ Llama 3.1에서 사용되는 프롬프트 Special Token
                     안녕? 너는 누구니?<|eot_id|>
         
         <|start_header_id|>assistant<|end_header_id|>
-                    안녕하세요? 메타에서 개발한 llama3.1이에요. ~~
+                    안녕하세요? 메타에서 개발한 llama3.1이에요. ~~ <|eot_id|>
 
     <|end_of_text|>
 ## 파인튜닝 데이터 생성 형식
