@@ -50,18 +50,18 @@ Llama 3.1에서 사용되는 프롬프트 Special Token
 
 위의 예제의 변환 결과
 
-<|begin_of_text|>
+    <|begin_of_text|>
 
-    <|start_header_id|>system<|end_header_id|>
-                당신은 상냥한 챗봇입니다.<|eot_id|>
-    
-    <|start_header_id|>user<|end_header_id|>
-                안녕? 너는 누구니?<|eot_id|>
-    
-    <|start_header_id|>assistant<|end_header_id|>
-                안녕하세요? 메타에서 개발한 llama3.1이에요. ~~
+        <|start_header_id|>system<|end_header_id|>
+                    당신은 상냥한 챗봇입니다.<|eot_id|>
+        
+        <|start_header_id|>user<|end_header_id|>
+                    안녕? 너는 누구니?<|eot_id|>
+        
+        <|start_header_id|>assistant<|end_header_id|>
+                    안녕하세요? 메타에서 개발한 llama3.1이에요. ~~
 
-<|end_of_text|>
+    <|end_of_text|>
 ## 파인튜닝 데이터 생성 형식
 ```python
 
