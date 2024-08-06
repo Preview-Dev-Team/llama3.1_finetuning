@@ -5,7 +5,8 @@
 2. [모델 설정 및 프롬프트 변환](#모델-설정-및-프롬프트-변환)
 3. [파인튜닝 프롬프트 작성 예시](#파인튜닝-프롬프트-작성-예시)
 
-## 기본 모델 사용 예시 (출처 : https://llama.meta.com/docs/model-cards-and-prompt-formats/llama3_1)
+## 기본 모델 사용 예시 
+(출처: [메타 공식 문서](https://llama.meta.com/docs/model-cards-and-prompt-formats/llama3_1), [메타 허깅 페이스 레포지터리](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct))
 ```python
 import transformers
 import torch
