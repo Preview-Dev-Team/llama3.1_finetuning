@@ -40,7 +40,7 @@ Llama 3.1에서 사용되는 프롬프트 Special Token
 
 | 토큰 | 설명 |
 |------|------|
-| <\`begin_of_text\`> | 프롬프트의 시작 |
+| <`\begin_of_text`\> | 프롬프트의 시작 |
 | <\`end_of_text\`> | 프롬프트의 종료 (모델 토큰 생성 종료) |
 | <\`finetune_right_pad_id\`> | 배치에서 텍스트 시퀀스를 동일한 길이로 패딩 |
 | <\`start_header_id\`> | 특정 역할을 지정하는 토큰. 가능한 역할: `[system, user, assistant, ipython]` |
